@@ -2,6 +2,10 @@
   color: red;
 }
 
+html{
+  font-family: "Geist", sans-serif;
+}
+
 @keyframes marquee {
     0% {
       transform: translateX(0);
