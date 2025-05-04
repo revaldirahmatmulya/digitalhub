@@ -6,23 +6,23 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: "🔍",
-      title: "Find out what you need",
-      description: "Belajar & Sharing Bareng Ahlinya",
+      title: "Belajar & Sharing Bareng Ahlinya",
+      description: "",
+    },
+    {
+      icon: "🌐",
+      title: "Kolaborasi & Networking",
+      description: "",
     },
     {
       icon: "⚙️",
-      title: "Work out the details",
-      description: "Kolaborasi & Networking",
+      title: "Support System yang Positif",
+      description: "",
     },
     {
       icon: "🚀",
-      title: "We get to work fast",
-      description: "Support System yang Positif",
-    },
-    {
-      icon: "🚀",
-      title: "We get to work fast",
-      description: "Peluang Kerja & Proyek",
+      title: "Peluang Kerja & Proyek",
+      description: "",
     },
   ];
 
@@ -41,7 +41,7 @@ const FeaturesSection = () => {
           Kenapa Harus Gabung?
         </motion.h2>
         <motion.p variants={fadeIn("up", 0.4)} className="text-gray-600">
-          Benefit yang bisa kalian ddapatkan
+          Benefit yang bisa kalian dapatkan
         </motion.p>
       </motion.div>
 
@@ -72,7 +72,7 @@ const FeaturesSection = () => {
             </motion.div>
             <motion.h3
               variants={textVariant(0.3)}
-              className="text-2xl font-medium mb-3"
+              className="text-2xl font-medium mb-3 text-center"
             >
               {feature.title}
             </motion.h3>
@@ -87,15 +87,12 @@ const FeaturesSection = () => {
       </motion.div>
 
       <motion.div variants={fadeIn("up", 0.7)} className="text-center mt-12">
-        <a
-          href="https://ekata.myr.id/membership/test-member-88877"
-          target="_blank"
-        >
+        <a href="https://ekata.myr.id/membership/digitalhub" target="_blank">
           <motion.button
             variants={fadeIn("up", 0.8)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-blue-600 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors relative"
+            className="bg-[#005b8d] hover:bg-[#40b0b4] text-white cursor-pointer px-8 py-3 rounded-full font-medium transition-colors relative"
           >
             Gabung Member Sekarang
             <div className="absolute -z-10 w-full h-full rounded-full bg-blue-600/30 blur-xl top-0 left-0"></div>

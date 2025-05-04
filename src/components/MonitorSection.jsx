@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import "swiper/css";
 import "swiper/css/navigation";
-import monitorCardBg from "../assets/monitor-card.webp";
+import community from "../assets/community.jpg";
 
 const MonitorSection = () => {
   return (
@@ -18,7 +18,7 @@ const MonitorSection = () => {
         <motion.div variants={fadeIn("right", 0.3)} className="w-full md:w-1/2">
           <motion.span
             variants={fadeIn("up", 0.4)}
-            className="text-emerald-500 font-semibold"
+            className="text-[#3e6bac] font-semibold"
           >
             Berkembang Bersama
           </motion.span>
@@ -69,7 +69,7 @@ const MonitorSection = () => {
           <motion.div variants={fadeIn("up", 0.4)} className="p-4">
             <motion.img
               variants={fadeIn("up", 0.5)}
-              src={monitorCardBg}
+              src={community}
               alt="Dashboard statistics"
               className="w-full h-auto rounded-lg"
             />

@@ -18,7 +18,7 @@ const Hero = () => {
         >
           {/* Star badge */}
           <div className="flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer group">
-            <span className="text-blue-600 group-hover:scale-110 transition-transform">
+            <span className="text-[#005b8d] group-hover:scale-110 transition-transform">
               ★
             </span>
             <span className="text-sm font-medium">Jump start your growth</span>
@@ -32,7 +32,7 @@ const Hero = () => {
           className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
         >
           Bangun Personal{" "}
-          <span className="text-blue-600 relative inline-block">
+          <span className="text-[#005b8d] relative inline-block">
             Branding & Skill Digitalmu
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-200/60"></span>
           </span>{" "}
@@ -59,9 +59,9 @@ const Hero = () => {
             href="https://ekata.myr.id/membership/digitalhub"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
+            className="block w-full md:w-auto cursor-pointer"
           >
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors flex items-center gap-2 cursor-pointer">
+            <button className="w-full md:w-auto bg-[#005b8d] text-white px-6 py-3 rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer">
               Gabung Sekarang
             </button>
           </a>

@@ -9,26 +9,26 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServicesSection = () => {
   const services = [
     {
-      icon: <BsStack className="w-8 h-8 text-indigo-600" />,
+      icon: <BsStack className="w-12 h-12 md:h-8 md:w-8 text-indigo-600" />,
       title: "Sekali beli, akses selamanya.",
       description:
         "Nikmati produk PEDEDIGITAL seumur hidup tanpa biaya tambahan.",
       // link: "#learn-more",
     },
     {
-      icon: <HiLightBulb className="w-8 h-8 text-amber-400" />,
+      icon: <HiLightBulb className="w-12 h-12 md:h-8 md:w-8 text-amber-400" />,
       title: "Gabung & berkembang bareng komunitas.",
       description: "Diskusi dan mentoring langsung dengan sesama member.",
       // link: "#learn-more",
     },
     {
-      icon: <BiTime className="w-8 h-8 text-cyan-400" />,
+      icon: <BiTime className="w-12 h-12 md:h-8 md:w-8 text-cyan-400" />,
       title: "Support kapan pun dibutuhkan.",
       description: "Tim kami siap bantu member tanpa batas waktu.",
       // link: "#learn-more",
     },
     {
-      icon: <FiSettings className="w-8 h-8 text-red-400" />,
+      icon: <FiSettings className="w-12 h-12 md:h-8 md:w-8 text-red-400" />,
       title: "Belajar bareng, sukses bareng.",
       description: "Dapat ilmu, relasi, dan dukungan di komunitas PEDEDIGITAL.",
       // link: "#learn-more",
@@ -64,7 +64,7 @@ const ServicesSection = () => {
               className="flex items-center gap-2"
             >
               <div className="w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center">
-                <div className="w-2.5 h-2.5 rounded-full bg-indigo-600"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-[#005b8d] "></div>
               </div>
               <span className="text-gray-600">Digital Marketing</span>
             </motion.div>
@@ -73,7 +73,7 @@ const ServicesSection = () => {
               className="flex items-center gap-2"
             >
               <div className="w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center">
-                <div className="w-2.5 h-2.5 rounded-full bg-indigo-600"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-[#005b8d] "></div>
               </div>
               <span className="text-gray-600">Content Creator</span>
             </motion.div>
@@ -82,7 +82,7 @@ const ServicesSection = () => {
               className="flex items-center gap-2"
             >
               <div className="w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center">
-                <div className="w-2.5 h-2.5 rounded-full bg-indigo-600"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-[#005b8d] "></div>
               </div>
               <span className="text-gray-600">Dropshipper</span>
             </motion.div>
@@ -91,12 +91,13 @@ const ServicesSection = () => {
             href="https://ekata.myr.id/membership/digitalhub"
             target="_blank"
             rel="noopener noreferrer"
+            className="block w-full md:w-auto"
           >
             <motion.button
               variants={fadeIn("up", 0.9)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-8 bg-indigo-600 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-indigo-700 transition-colors"
+              className="w-full md:w-auto mt-8  bg-[#005b8d] hover:bg-[#40b0b4] text-white px-8 py-3 cursor-pointer rounded-full  transition-colors"
             >
               Gabung Sekarang
             </motion.button>
@@ -113,33 +114,26 @@ const ServicesSection = () => {
               key={index}
               variants={fadeIn("up", 0.3 * (index + 1))}
               whileHover={{ scale: 1.05 }}
-              className="bg-white max-w-72 cursor-pointer rounded-2xl p-6 hover:shadow-xl transition-shadow duration-300"
+              className="bg-white max-w-72 cursor-pointer rounded-2xl p-6 shadow-xl md:shadow-none md:hover:shadow-xl transition-shadow duration-300"
             >
               <motion.div
                 variants={fadeIn("down", 0.4 * (index + 1))}
-                className="mb-4"
+                className="mb-4 flex justify-center md:justify-start"
               >
                 {service.icon}
               </motion.div>
               <motion.h3
                 variants={textVariant(0.3)}
-                className="text-xl font-semibold mb-2"
+                className="text-xl font-semibold mb-2 text-center md:text-left"
               >
                 {service.title}
               </motion.h3>
               <motion.p
                 variants={fadeIn("up", 0.5 * (index + 1))}
-                className="text-gray-600 mb-4"
+                className="text-gray-600 mb-4 text-center md:text-left"
               >
                 {service.description}
               </motion.p>
-              {/* <motion.a
-                variants={fadeIn("up", 0.6 * (index + 1))}
-                href={service.link}
-                className="text-indigo-600 font-medium hover:text-indigo-700 transition-colors"
-              >
-                LEARN MORE
-              </motion.a> */}
             </motion.div>
           ))}
         </motion.div>

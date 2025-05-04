@@ -16,7 +16,8 @@ import ProductSection from "./components/ProductSection";
 function App() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
-      <div className="absolute -top-28 -left-28 w-[500px] h-[500px] bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 rounded-full blur-[80px] -z-10"></div>
+      <div className="absolute -top-28 -left-28 w-[500px] h-[500px] bg-gradient-to-tr from-[#33b8ff33] to-[#00213333] rounded-full blur-[80px] -z-10"></div>
+
       <div className="overflow-hidden">
         <Navbar />
         <Hero />
@@ -28,7 +29,7 @@ function App() {
         <MonitorSection />
         {/* <PricingSection /> */}
         <ServicesSection />
-        <ProductSection />
+        {/* <ProductSection /> */}
         <TestimonialsSection />
         <NewsletterSection />
         <Footer />

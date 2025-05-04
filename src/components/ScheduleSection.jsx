@@ -1,4 +1,5 @@
 import scheduleImage from "../assets/stats.webp";
+import access from "../assets/access.jpg";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -15,7 +16,7 @@ const ScheduleSection = () => {
         <motion.div variants={fadeIn("right", 0.3)} className="w-full md:w-1/2">
           <motion.img
             variants={fadeIn("up", 0.4)}
-            src={scheduleImage}
+            src={access}
             alt="Statistics dashboard"
             className="w-full h-auto"
           />

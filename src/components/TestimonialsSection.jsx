@@ -5,24 +5,28 @@ import "swiper/css/navigation";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import reza from "../assets/reza.png";
+import izul from "../assets/izul.png";
+import rozaq from "../assets/rozaq.png";
+import logo2 from "../assets/pededigital-v1.1.png";
 
 const testimonials = [
   {
     id: 1,
-    name: "Robin Ayala Doe",
-    image: "https://randomuser.me/api/portraits/men/77.jpg",
+    name: "Izzul",
+    image: izul,
     text: "Gabung PedeDigital bikin aku lebih pede mulai channel YouTube! Sekarang udah punya 10K+ subscribers. Thank you, PEDEDIGITAL!",
   },
   {
     id: 2,
-    name: "John De marli",
-    image: "https://randomuser.me/api/portraits/women/90.jpg",
+    name: "Reza",
+    image: reza,
     text: "Dari komunitas ini aku ketemu partner kerjaan digital marketing. Sekarang kita punya project bareng!",
   },
   {
     id: 3,
-    name: "Rowhan Smith",
-    image: "https://randomuser.me/api/portraits/men/90.jpg",
+    name: "Rozaq",
+    image: rozaq,
     text: "PedeDigital adalah tempat yang tepat untuk belajar dan berkolaborasi. Aku sudah mendapatkan banyak ilmu baru dan teman baru di sini.",
   },
   // {
@@ -51,9 +55,10 @@ const TestimonialsSection = () => {
       <motion.div variants={fadeIn("up", 0.3)} className="text-center mb-12">
         <motion.h2
           variants={textVariant(0.2)}
-          className="text-3xl md:text-4xl font-bold mb-4"
+          className="text-3xl md:text-4xl font-bold mb-4 flex flex-col md:flex-row items-center justify-center gap-2"
         >
-          Apa yang mereka katakan tentang PEDEDIGITAL?
+          Apa yang mereka katakan tentang
+          <img src={logo2} alt="" className="h-10" />
         </motion.h2>
         <motion.p variants={fadeIn("up", 0.4)} className="text-gray-600">
           testimonial dari member kami yang sudah merasakan manfaatnya.

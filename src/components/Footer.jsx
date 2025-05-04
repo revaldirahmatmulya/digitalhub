@@ -1,7 +1,16 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import { FaInstagram } from "react-icons/fa6";
+import logo1 from "../assets/pededigital-icon1.png";
+import logo2 from "../assets/pededigital-v1.1.png";
+import logo3 from "../assets/pededigital-v2.1.png";
 
 const Footer = () => {
   const footerLinks = {
@@ -38,18 +47,20 @@ const Footer = () => {
       <div className="section-container">
         <motion.div
           variants={fadeIn("up", 0.3)}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12"
+          className="flex justify-center items-center"
         >
           {/* Brand Column */}
-          <motion.div variants={fadeIn("right", 0.4)} className="lg:col-span-4">
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            className="w-full max-w-md text-center"
+          >
             <motion.div
               variants={fadeIn("down", 0.5)}
-              className="flex items-center gap-1 mb-6"
+              className="flex flex-col items-center gap-2 mb-6"
             >
-              <div className="w-4 h-4 bg-blue-600 rounded-full opacity-75"></div>
-              <div className="w-4 h-4 bg-red-500 rounded-full -ml-2"></div>
-              <span className="text-xl font-medium ml-1">PEDE Digital</span>
+              <img src={logo2} alt="" className="h-9" />
             </motion.div>
+
             <motion.p
               variants={fadeIn("up", 0.6)}
               className="text-gray-600 mb-6"
@@ -57,69 +68,36 @@ const Footer = () => {
               Gabung komunitas kreator digital yang siap dukung kamu berkembang
               dan berkolaborasi!
             </motion.p>
-            <motion.div variants={fadeIn("up", 0.7)} className="flex gap-4">
+
+            <motion.div
+              variants={fadeIn("up", 0.7)}
+              className="flex justify-center gap-4"
+            >
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
-                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition-colors"
+                href="https://wa.me/6288228301201"
+                target="_blank"
+                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600  hover:bg-[#40b0b4] hover:text-white transition-colors"
               >
-                <FaFacebookF className="w-5 h-5" />
+                <FaWhatsapp className="w-5 h-5" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
-                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-400 hover:text-white transition-colors"
+                href="https://www.instagram.com/ekata.tech/"
+                target="_blank"
+                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-[#40b0b4] hover:text-white transition-colors"
               >
-                <FaTwitter className="w-5 h-5" />
+                <FaInstagram className="w-5 h-5" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
-                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-700 hover:text-white transition-colors"
+                href="https://www.linkedin.com/company/ekata-tech/"
+                target="_blank"
+                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-[#40b0b4] hover:text-white transition-colors"
               >
                 <FaLinkedinIn className="w-5 h-5" />
               </motion.a>
             </motion.div>
-          </motion.div>
-
-          {/* Links Columns */}
-          <motion.div variants={fadeIn("left", 0.4)} className="lg:col-span-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {Object.entries(footerLinks).map(
-                ([category, links], categoryIndex) => (
-                  <motion.div
-                    key={category}
-                    variants={fadeIn("up", 0.3 * (categoryIndex + 1))}
-                  >
-                    <motion.h3
-                      variants={textVariant(0.2)}
-                      className="text-lg font-medium mb-4"
-                    >
-                      {category.charAt(0).toUpperCase() + category.slice(1)}
-                    </motion.h3>
-                    <motion.ul
-                      variants={fadeIn("up", 0.4)}
-                      className="space-y-3"
-                    >
-                      {links.map((link, index) => (
-                        <motion.li
-                          key={index}
-                          variants={fadeIn("up", 0.1 * (index + 1))}
-                        >
-                          <motion.a
-                            whileHover={{ x: 5 }}
-                            href={link.href}
-                            className="text-gray-600 hover:text-gray-900"
-                          >
-                            {link.name}
-                          </motion.a>
-                        </motion.li>
-                      ))}
-                    </motion.ul>
-                  </motion.div>
-                )
-              )}
-            </div>
           </motion.div>
         </motion.div>
 
@@ -143,7 +121,7 @@ const Footer = () => {
               variants={fadeIn("left", 1.0)}
               className="text-gray-600 text-sm"
             >
-              Created by PEDE DIGITAL
+              Created by PedeDigital
             </motion.p>
           </motion.div>
         </motion.div>

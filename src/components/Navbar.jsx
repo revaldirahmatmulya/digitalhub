@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
+import logo1 from "../assets/pededigital-icon1.png";
+import logo2 from "../assets/pededigital-v1.1.png";
+import logo3 from "../assets/pededigital-v2.1.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,14 +31,7 @@ const Navbar = () => {
           variants={fadeIn("right", 0.3)}
           className="flex items-center gap-1 cursor-pointer"
         >
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            className="w-4 h-4 bg-blue-600 rounded-full opacity-75 hover:opacity-100 transition-opacity"
-          ></motion.div>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            className="w-4 h-4 bg-red-500 rounded-full -ml-2 hover:opacity-75 transition-opacity"
-          ></motion.div>
+          <motion.img src={logo2} className="h-8"></motion.img>
         </motion.div>
         {/* Mobile Menu Button */}
         <motion.button
@@ -61,10 +57,10 @@ const Navbar = () => {
               variants={fadeIn("down", 0.1 * (index + 1))}
               href={link.href}
               onClick={() => setActiveLink(link.href)}
-              className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all
+              className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-[#005b8d] after:transition-all
                 ${
                   activeLink === link.href
-                    ? "text-blue-600 after:w-full  "
+                    ? "text-[#005b8d] after:w-full  "
                     : "text-gray-600 hover:text-gray-900"
                 }`}
             >
@@ -78,9 +74,11 @@ const Navbar = () => {
           variants={fadeIn("left", 0.3)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="hidden md:block bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100"
+          className="hidden md:block bg-[#005b8d] hover:bg-[#40b0b4] text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100"
         >
-          <a href="https://ekata.myr.id/membership/digitalhub">Bergabung</a>
+          <a href="https://ekata.myr.id/portal" target="_blank">
+            Masuk
+          </a>
         </motion.button>
       </div>
 
@@ -108,7 +106,7 @@ const Navbar = () => {
                 className={`block text-sm font-medium py-2
                   ${
                     activeLink === link.href
-                      ? "text-blue-600"
+                      ? "text-[#005b8d]"
                       : "text-gray-600 hover:text-gray-900"
                   }`}
               >
@@ -119,9 +117,11 @@ const Navbar = () => {
               variants={fadeIn("up", 0.4)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100"
+              className="w-full bg-[#005b8d] hover:bg-[#40b0b4] text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100"
             >
-              Get in touch
+              <a href="https://ekata.myr.id/portal" target="_blank">
+                Masuk
+              </a>
             </motion.button>
           </motion.div>
         </motion.div>
