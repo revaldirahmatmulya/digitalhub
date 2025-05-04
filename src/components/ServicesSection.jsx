@@ -84,7 +84,7 @@ const ServicesSection = () => {
               <div className="w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center">
                 <div className="w-2.5 h-2.5 rounded-full bg-indigo-600"></div>
               </div>
-              <span className="text-gray-600">Dropshipper</span>
+              <span className="text-gray-600">Dropshipper & Reseller</span>
             </motion.div>
           </motion.div>
           <a
@@ -98,7 +98,7 @@ const ServicesSection = () => {
               whileTap={{ scale: 0.95 }}
               className="mt-8 bg-indigo-600 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-indigo-700 transition-colors"
             >
-              Gabung Sekarang Juga
+              Gabung Sekarang Juga !
             </motion.button>
           </a>
         </motion.div>
