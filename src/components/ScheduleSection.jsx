@@ -33,7 +33,7 @@ const ScheduleSection = () => {
             variants={textVariant(0.5)}
             className="text-3xl md:text-4xl font-bold text-navy-900 mt-4 mb-6"
           >
-            Dapatkan akses penuh seumur hidup dengan sekali bayar !
+            Dapatkan akses penuh seumur hidup dengan sekali bayar.
           </motion.h2>
           <motion.p variants={fadeIn("up", 0.6)} className="text-gray-600 mb-8">
             Di PEDEDIGITAL, kamu cukup beli sekali untuk menikmati akses seumur
