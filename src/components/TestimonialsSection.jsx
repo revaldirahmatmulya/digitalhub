@@ -25,24 +25,6 @@ const testimonials = [
     image: "https://randomuser.me/api/portraits/men/90.jpg",
     text: "PedeDigital adalah tempat yang tepat untuk belajar dan berkolaborasi. Aku sudah mendapatkan banyak ilmu baru dan teman baru di sini.",
   },
-  // {
-  //   id: 4,
-  //   name: "Sarah Johnson",
-  //   image: "https://randomuser.me/api/portraits/women/45.jpg",
-  //   text: "The customer service has been exceptional. They went above and beyond to help me solve my problems and were always available when I needed them.",
-  // },
-  // {
-  //   id: 5,
-  //   name: "Michael Chen",
-  //   image: "https://randomuser.me/api/portraits/men/32.jpg",
-  //   text: "I've been using their services for over a year now and couldn't be happier. The platform is intuitive and the features are exactly what I needed for my business.",
-  // },
-  // {
-  //   id: 6,
-  //   name: "Emma Wilson",
-  //   image: "https://randomuser.me/api/portraits/women/28.jpg",
-  //   text: "What impressed me most was how quickly they responded to my requests. The team is professional, knowledgeable, and truly cares about their customers' success.",
-  // },
 ];
 
 const TestimonialsSection = () => {
@@ -53,7 +35,7 @@ const TestimonialsSection = () => {
           variants={textVariant(0.2)}
           className="text-3xl md:text-4xl font-bold mb-4"
         >
-          Apa yang mereka katakan tentang PEDEDIGITAL?
+          Apa yang mereka katakan tentang PedeDigital?
         </motion.h2>
         <motion.p variants={fadeIn("up", 0.4)} className="text-gray-600">
           testimonial dari member kami yang sudah merasakan manfaatnya.
