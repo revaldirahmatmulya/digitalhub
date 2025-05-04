@@ -27,7 +27,7 @@ const MonitorSection = () => {
             className="text-3xl md:text-4xl font-bold text-navy-900 mt-4 mb-6 md:w-4/5"
           >
             Belajar, berkembang, dan terkoneksi - semuanya ada di komunitas
-            PEDEDIGITAL
+            PedeDigital
           </motion.h2>
           <motion.p
             variants={fadeIn("up", 0.6)}
