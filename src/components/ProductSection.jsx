@@ -41,7 +41,7 @@ const ProductSection = () => {
           Kelas Unggulan Kami
         </motion.h2>
         <motion.p variants={fadeIn("up", 0.4)} className="text-gray-600">
-          Beberapa kelas pilihan kita yang bisa membuat kamu makin Pede !
+          Beberapa kelas pilihan kita yang bisa membuat kamu makin pede !
         </motion.p>
       </motion.div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
